@@ -102,13 +102,13 @@ button:active, button:focus {
 }
 @media screen and (min-width: 480px) {
   .flex-container {
-    width: 480px;
+    width: 450px;
     display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .flex-container {
-    width: 768px;
+    width: 738px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -134,7 +134,7 @@ button:active, button:focus {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container {
-    width: 480px;
+    width: 450px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -146,7 +146,7 @@ button:active, button:focus {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    width: 768px;
+    width: 738px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -179,13 +179,13 @@ button:active, button:focus {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
     display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 738px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -240,12 +240,12 @@ button:active, button:focus {
 }
 @media screen and (min-width: 480px) {
   .clients-container {
-    width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .clients-container {
-    width: 768px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1293,6 +1293,7 @@ textarea {
   padding: 0;
   width: 450px;
   height: 622px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .team__card {

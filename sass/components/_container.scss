@@ -5,11 +5,11 @@
     margin-right: auto;
     margin-left: auto;
     @media screen and (min-width: $mobile) {
-      width: $mobile;
+      width: 450px;
       display: block;
     }
     @media screen and (min-width: $tablet) {
-      width: $tablet;
+      width: 738px;
       display: flex;
     }
     @media screen and (min-width: $desktop) {
@@ -25,12 +25,12 @@
     margin-right: auto;
     margin-left: auto;
     @media screen and (min-width: $mobile) and (max-width: 767px) {
-      width: $mobile;
+      width: 450px;
       flex-direction: column;
       align-items: center;
     }
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      width: $tablet;
+      width: 738px;
       display: flex;
       align-items: baseline;
       flex-wrap: wrap;
@@ -51,11 +51,11 @@
     margin-right: auto;
     margin-left: auto;
     @media screen and (min-width: $mobile) {
-      width: $mobile;
+      width: 450px;
       display: block;
     }
     @media screen and (min-width: $tablet) {
-      width: $tablet;
+      width: 738px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -90,10 +90,10 @@
     margin-left: auto;
 
     @media screen and (min-width: $mobile) {
-     width: $mobile;
+     width: 450px;
     }
     @media screen and (min-width: $tablet) {
-      width: $tablet;
+      width: 738px;
     }
     @media screen and (min-width: $desktop) {
       width: $desktop;
