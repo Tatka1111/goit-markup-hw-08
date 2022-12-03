@@ -4,7 +4,7 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       width: $mobile;
       display: block;
     }
@@ -34,12 +34,15 @@
       display: flex;
       align-items: baseline;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
+     
      
     }
     @media screen and (min-width: $desktop) {
       width: $desktop;
       align-items: baseline;
+      justify-content: space-around;
+      
     }
   }
   .container {
@@ -47,7 +50,7 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
       width: $mobile;
       display: block;
     }
@@ -87,7 +90,7 @@
     margin-left: auto;
 
     @media screen and (max-width: 767px) {
-      width: $mobile;
+     width: $mobile;
     }
     @media screen and (min-width: $tablet) {
       width: $tablet;

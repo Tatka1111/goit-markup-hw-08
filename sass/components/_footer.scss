@@ -5,16 +5,31 @@
     margin: 0;
     background-color: var(--accent-bg-color);
 
+    
+
     @media screen and (min-width: $desktop) {
       display: block;
+      margin: 0;
     }
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {}
+    
 
     &__logo {
       display: block;
       margin-bottom: 20px;
-      
+      @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 70px;
       }
+
+      
+      @media screen and (min-width: $desktop)  {
+        display: block;
+        margin-bottom: 20px;
+       }
+       
+      }
+     
       &__list {
         list-style: none;
         display: flex;
@@ -23,9 +38,8 @@
         margin: 0;
         padding: 0;
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $desktop) {
           display: block;
-        
         }
        
       }
@@ -82,7 +96,7 @@
         justify-content: center;
         gap: 10px;
         margin-left: 70px;
-        margin-right: 93px;
+        margin-right: 74px;
       }
       &__title {
         font-family: var(--primary-font);
@@ -179,6 +193,7 @@
             @media screen and (max-width: 1199px) {
               margin-bottom: 20px;
             }
+            
           }
           &-form__input:hover,
           &-form__input:focus {
@@ -250,6 +265,11 @@
     .subscribe__title {
       text-align: center;
       margin-top: 60px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .subscribe-box {
+      
     }
   }
   

@@ -100,7 +100,7 @@ button:active, button:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .flex-container {
     width: 480px;
     display: block;
@@ -155,9 +155,9 @@ button:active, button:focus {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -166,6 +166,8 @@ button:active, button:focus {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -175,7 +177,7 @@ button:active, button:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
     display: block;
@@ -298,12 +300,12 @@ button:active, button:focus {
   display: none;
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__list {
     display: inline-block;
     position: absolute;
     top: 0;
-    right: 3%;
+    left: 70%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -323,21 +325,31 @@ button:active, button:focus {
 .contacts__email {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__email {
+    font-size: 14px;
+  }
+}
 
 .contacts__phone {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__phone {
+    font-size: 14px;
+  }
 }
 
 .contacts__icon--email {
@@ -602,8 +614,8 @@ button:active, button:focus {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: var(--accent-bg-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_sm@1x.jpg");
@@ -673,6 +685,12 @@ button:active, button:focus {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -714,7 +732,7 @@ button:active, button:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     left: 50%;
     top: 50%;
@@ -986,7 +1004,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .feature {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 .feature__list {
@@ -1009,13 +1027,11 @@ textarea {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 768px;
     margin: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feature__list {
-    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1196,7 +1212,6 @@ textarea {
 
 .team {
   margin: 0;
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--special-bg-color);
@@ -1219,13 +1234,14 @@ textarea {
   margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 .team__name {
@@ -1247,7 +1263,7 @@ textarea {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1257,22 +1273,24 @@ textarea {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 768px;
     margin: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
-    width: 1200px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
 .team__card {
+  padding: 0;
   width: 450px;
   height: 622px;
 }
@@ -1292,10 +1310,15 @@ textarea {
   background-color: #ffffff;
   text-align: center;
   padding-top: var(--card-set-gap);
-  padding-bottom: var(--card-set-gap);
+  padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1200px) {
+  .team__content {
+    padding-bottom: var(--card-set-gap);
+  }
 }
 .team-socials {
   display: -webkit-box;
@@ -1352,12 +1375,11 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     width: calc((100% - 120px) / 2);
-    margin: 30px;
+    margin: var(--card-set-gap);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list > .team__item {
-    width: 270px;
     margin-right: var(--card-set-gap);
   }
   .team__list > .team__item:last-child {
@@ -1368,9 +1390,6 @@ textarea {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -1382,13 +1401,14 @@ textarea {
   margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 .clients__list {
@@ -1662,11 +1682,27 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer {
     display: block;
+    margin: 0;
   }
 }
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 .footer__list {
   list-style: none;
@@ -1683,7 +1719,7 @@ textarea {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__list {
     display: block;
   }
@@ -1737,7 +1773,7 @@ textarea {
           justify-content: center;
   gap: 10px;
   margin-left: 70px;
-  margin-right: 93px;
+  margin-right: 74px;
 }
 .footer__title {
   font-family: var(--primary-font);
