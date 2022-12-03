@@ -1,4 +1,5 @@
 .team {
+  display: block;
     margin: 0;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,6 +8,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
   }
+ 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -45,19 +47,24 @@
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
-       
+       @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+       }
 
         @media screen and (min-width: $tablet) and (max-width: 1199px) {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           margin: -30px;
+          justify-content: space-between;
+          padding-bottom: 40px;
+          
         }
         @media screen and (min-width: $desktop) {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          
+          padding-bottom: 50px;
         }
       }
       
@@ -65,7 +72,7 @@
       padding: 0;
       width: 450px;
       height: 622px;
-      overflow: hidden;
+     
        
 
         @media screen and (min-width: $tablet) {
@@ -76,6 +83,7 @@
         @media screen and (min-width: $desktop) {
         width: 270px;
         height: 428px;
+        
         }
       }
       
@@ -87,10 +95,6 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
           0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-
-        @media screen and (min-width: $desktop) {
-          padding-bottom: var(--card-set-gap);
-        }
       }
      
       &-socials {
@@ -136,13 +140,14 @@
   @media screen and (max-width: 767px) {
     .team__item:not(:last-child) {
       margin-bottom: var(--card-set-gap);
+      padding-bottom: 30px;
     }
-
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     .team__item {
       width: calc((100% - 2 * 60px) / 2);
-      margin: var(--card-set-gap);
+      margin: 30px;
+      margin-bottom: 0;
     }
   }
 

@@ -19,7 +19,7 @@
       @media screen and (min-width: $tablet) and (max-width: 1199px) {
         display: flex;
         margin-bottom: 20px;
-        margin-left: 70px;
+        margin-left: 85px;
       }
 
       
@@ -37,6 +37,10 @@
         align-items: center;
         margin: 0;
         padding: 0;
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 60px;
+        }
 
         @media screen and (min-width: $desktop) {
           display: block;
@@ -119,6 +123,9 @@
             gap: 10px;
             margin-top: 20px;
             padding: 0;
+            @media screen and (max-width: 767px) {
+              margin-bottom: 60px;
+            }
             @media screen and (min-width: $tablet) {
               align-items: baseline;
             }

@@ -27,6 +27,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin: -30px;
+        padding-bottom: 30px;
       }
       @media screen and (min-width: $desktop) {
         display: flex;
@@ -95,6 +96,7 @@
   .feature__item {
     width: calc((100% - 2 * 60px) / 2);
     margin: 30px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: $desktop) {
