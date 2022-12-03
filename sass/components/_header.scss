@@ -1,0 +1,109 @@
+.contacts {
+  
+  margin-left: auto;
+
+ 
+  
+    &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.contacts__list {
+  display: none;
+  list-style: none;
+  
+  
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 3%;
+  }
+    
+    
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    position: relative;
+    top: 20%;
+  }
+  }
+  .contacts__item {
+    margin: 0;
+  
+  }
+  
+  .contacts__email {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+  }
+  .contacts__phone {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+  }
+  .contacts__icon--email {
+    display: inline;
+      fill: var(--primary-text-color);
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      align-items: baseline;
+   
+  }
+  .contacts__email:hover .contacts__icon--email,
+  .contacts__email:focus .contacts__icon--email {
+    fill: var(--accent-text-color);
+  }
+  
+  .contacts__icon--phone {
+      display: inline;
+      fill: var(--primary-text-color);
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    
+  }
+  .contacts__phone:hover .contacts__icon--phone,
+  .contacts__phone:focus .contacts__icon--phone {
+    fill: var(--accent-text-color);
+  }
+ 
+  
+  .contacts__email:hover,
+  .contacts__email:focus {
+    color: var(--accent-text-color);
+  }
+  @media screen and (min-width: $tablet) {
+    .contacts__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .contacts__item + .contacts__item {
+      margin-left: 50px;
+      list-style: none;
+    }
+  }
+ 
+  .contacts__phone:hover,
+  .contacts__phone:focus {
+    color: var(--accent-text-color);
+  }
+ 

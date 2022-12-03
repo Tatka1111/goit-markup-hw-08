@@ -1,0 +1,131 @@
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-text-color);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $mobile;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+ 
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--primary-bg-color);
+}
+
+.mobile-menu {
+  padding-left: 40px;
+  padding-top: 48px;
+  margin-bottom: auto;
+  list-style: none;
+
+  &__link {
+    display: flex;
+    text-align: left;
+    margin-bottom: 32px;
+    color: var(--title-text-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  
+    &--active {
+      color: var(--accent-text-color);
+    }
+}
+}
+.mobile-contacts {
+  display: block;
+  padding-left: 40px;
+
+  &__item {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+   
+  }
+  &__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+}
+
+.mobile-socials {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  justify-content: space-between;
+  &__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+  }
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &__item:not(:first-child) {
+    padding-left: 10px;
+  }
+  &__link {
+    color: var(--accent-text-color);
+  }
+}

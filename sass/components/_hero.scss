@@ -1,0 +1,82 @@
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: var(--accent-bg-color);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url('../images/hero/img_sm@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url("../images/hero/img_sm@2x.jpg");
+}
+@media screen and (min-width: 481px) {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url('../images/hero/img_md@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url("../images/hero/img_md@2x.jpg");
+}
+}
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url('../images/hero/Img_lg@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url("../images/hero/Img_lg@2x.jpg");
+}
+  }
+    &__title {
+        color: var(--primary-bg-color);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.06em;
+        width: 360px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        @media screen and (min-width: $desktop) {
+          font-size: 44px;
+          width: 696px;
+        }
+      }
+      &__button {
+        border: none;
+        border-radius: 4px;
+        padding: 10px 32px;
+        text-align: center;
+        color: var(--primary-bg-color);
+        background-color: var(--accent-text-color);
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.8;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+      }
+  }
