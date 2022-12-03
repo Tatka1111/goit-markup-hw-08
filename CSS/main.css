@@ -100,7 +100,7 @@ button:active, button:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .flex-container {
     width: 480px;
     display: block;
@@ -177,7 +177,7 @@ button:active, button:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
     display: block;
@@ -238,7 +238,7 @@ button:active, button:focus {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients-container {
     width: 480px;
   }
