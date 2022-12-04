@@ -47,38 +47,32 @@
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
-       @media screen and (max-width: 767px) {
-        padding-bottom: 30px;
-       }
+     
 
         @media screen and (min-width: $tablet) and (max-width: 1199px) {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
-          margin: -30px;
+          margin: -15px;
           justify-content: space-between;
-          padding-bottom: 40px;
           
         }
         @media screen and (min-width: $desktop) {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding-bottom: 50px;
+          
         }
       }
       
       &__card {
       padding: 0;
-      width: 450px;
-      height: 622px;
+      width: 100%;
+      
      
        
 
-        @media screen and (min-width: $tablet) {
-        width: 354px;
-        height: 536px;
-        }
+        
       
         @media screen and (min-width: $desktop) {
         width: 270px;
@@ -140,14 +134,14 @@
   @media screen and (max-width: 767px) {
     .team__item:not(:last-child) {
       margin-bottom: var(--card-set-gap);
-      padding-bottom: 30px;
+      
     }
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     .team__item {
-      width: calc((100% - 2 * 60px) / 2);
-      margin: 30px;
-      margin-bottom: 0;
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    
     }
   }
 

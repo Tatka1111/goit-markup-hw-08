@@ -27,7 +27,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin: -30px;
-        padding-bottom: 30px;
+        
       }
       @media screen and (min-width: $desktop) {
         display: flex;
@@ -53,9 +53,8 @@
 
     &__thumb {
       padding: 0;
-      width: 450px;
-      height: 120px;
-      margin-bottom: 30px;
+      width: 100%;
+     
       border-radius: 4px;
       background-color: var(--special-bg-color);
       display: flex;
@@ -96,7 +95,7 @@
   .feature__item {
     width: calc((100% - 2 * 60px) / 2);
     margin: 30px;
-    margin-bottom: 0;
+
   }
 }
 @media screen and (min-width: $desktop) {
