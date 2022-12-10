@@ -64,10 +64,14 @@
   .contacts__icon--email {
     display: inline;
       fill: var(--primary-text-color);
-      width: 16px;
-      height: 12px;
+      width: 14px;
+      height: 10px;
       margin-right: 10px;
       align-items: baseline;
+      @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+      }
    
   }
   .contacts__email:hover .contacts__icon--email,
@@ -79,8 +83,12 @@
       display: inline;
       fill: var(--primary-text-color);
       width: 10px;
-      height: 16px;
+      height: 14px;
       margin-right: 10px;
+      @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+      }
     
   }
   .contacts__phone:hover .contacts__icon--phone,
